@@ -1,0 +1,508 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    background-color: #080808;
+    margin: 0;
+    padding: 0;
+    padding-top: 100px;
+}
+
+.Navigation {
+    position: fixed;       
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #080808; 
+    padding: 20px 40px;
+    gap: 20px;
+}
+
+.Navigation a{
+    text-decoration: none;
+}
+.JustineLogo {
+    color: #d3403b;
+    font-size: 1.4rem;
+    font-family: Verdana, sans-serif;
+    font-weight: 900;
+}
+
+.CenterNav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.HomeNav, .AboutNav, .ProjectNav, .ContactNav, .EducationNav {
+    font-size: 1.2rem;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: Verdana, sans-serif;
+    transition: all 0.3s ease;
+}
+
+.HomeNav:hover, .AboutNav:hover, .ProjectNav:hover, .ContactNav:hover, .EducationNav:hover {
+    color: #d3403b;
+    transform: scale(1.1);
+}
+
+.NameContainer {
+    max-width: 900px;    
+    margin: 40px auto;  
+    padding: 10px;
+}
+
+.Name {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+.HelloText, .JustineText, .PeriodText {
+    margin: 0;
+}
+
+.HelloText, .PeriodText {
+    color: #ffffff;
+    font-size: 3.2rem;
+}
+
+.JustineText {
+    margin-left: 10px;
+    color: #d3403b;
+    font-size: 3.2rem;
+}
+
+
+.Purpose {
+    margin-top: 20px;
+}
+
+.PurposeText {
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-family: Verdana, sans-serif;
+    margin-top: 0;
+    text-align: justify;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+.ButtonContainer {
+    display: flex;
+    justify-content: left;
+    margin-top: 20px;
+}
+
+.HireMe {
+    background-color: #080808;
+    border-radius: 30px;
+    color: #ffffff;
+    border: solid 1px #d3403b;
+    padding: 16px;
+    font-size: 1.5rem;
+    width: 200px;
+    transition: all 0.3s ease;
+}
+
+
+.Logo {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 20px;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding-left: 15px;
+    margin-bottom: 35px;
+}
+
+.Linkdin, .Indeed, .JobStreet {
+    width: 34px;
+    height: 34px;
+    border: 2px solid #d3403b;
+    border-radius: 50%;
+    padding: 2px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    background-color: #080808;
+}
+
+.Linkdin:hover, .Indeed:hover, .JobStreet:hover {
+    transform: scale(1.1);
+    background-color: #d3403b; 
+}
+
+
+
+
+@media (max-width: 768px) {
+    .Navigation {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Name {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .HelloText, .JustineText, .PeriodText {
+        font-size: 2rem;
+    }
+
+    .PurposeText {
+        font-size: 0.95rem;
+    }
+
+    .HireMe {
+        font-size: 1.2rem;
+        width: 160px;
+    }
+}
+
+@media (max-width: 480px) {
+    .HelloText, .JustineText, .PeriodText {
+        font-size: 1.5rem;
+    }
+
+    .PurposeText {
+        font-size: 0.9rem;
+    }
+
+    .HireMe {
+        font-size: 1rem;
+        width: 140px;
+    }
+}
+.Technologies {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.TechnologiesContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.techStack {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.Icons img{
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+.Icons:hover {
+    transform: scale(1.4);
+    transition: transform 0.3s ease;
+}
+
+
+
+.ProjectContainer {
+    font-family: Verdana;
+}
+.Projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+    padding: 30px;
+    justify-items: center;
+    align-items: start;
+}
+
+.ProjectsText, .TechnologiesUsed {
+    grid-column: 1 / -1; 
+    color: #d3403b;
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.Project1, .Project2, .Project3, .Project4 {
+    width: 100%;
+    max-width: 570px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid #383535;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Project1:hover, .Project2:hover, .Project3:hover, .Project4:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.ProjectTitle {
+    color: #d3403b;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+.ProjectDescription {
+    color: #ffffff;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.ProjectButton {
+    background: transparent;
+    border: 1px solid #d3403b;
+    border-radius: 25px;
+    padding: 10px 20px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+.ProjectButton:hover {
+    background: #d3403b;
+    transform: scale(1.05);
+}
+
+@media (max-width: 1600px) {
+    .Projects {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 1024px) {
+    .Projects {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 600px) {
+    .Projects {
+        grid-template-columns: 1fr; 
+    }
+}
+
+
+
+.Overlay4, .Overlay3, .Overlay2, .Overlay {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1000;
+}
+
+.ModalBox4, .ModalBox3, .ModalBox2, .ModalBox {
+    display: none;
+    position: fixed;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    background: #121212;
+    color: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    max-width: 750px;
+    width: 90%;
+    z-index: 1001;
+    box-shadow: 0px 6px 20px rgba(0,0,0,0.5);
+    text-align: center;
+}
+
+.CloseBtn4, .CloseBtn3, .CloseBtn2, .CloseBtn {
+    background: #d3403b;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition:  0.3s ease;
+}
+.CloseBtn4:hover, .CloseBtn3:hover, .CloseBtn2:hover, .CloseBtn:hover {
+    background: #a82e2a;
+}
+
+.ProjectTitles {
+    color: #d3403b;
+    font-size: 2.6rem;
+    margin-bottom: 15px;
+}
+
+.AmphibianRobots, .RandomNumberGuesser{
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+.RythmGame{
+    width: 100%;
+    max-width: 372px;
+    border-radius: 10px;
+}
+.Calculator {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 10px;
+}
+
+.technologies {
+    color: #d3403b;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0px;
+    margin-top: 60px;
+    padding-bottom: 0px;
+}
+
+.Cplus{
+    width: 34px;
+    height: 34px;
+    border: 2px solid #d3403b;
+    border-radius: 50%;
+    padding: 2px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    background-color: #080808;
+}
+
+.ProjectText{
+    font-size: 1.2rem;
+    
+}
+
+.techerStack {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.Icons {
+  position: relative;
+  display: inline-block;
+}
+
+
+.tech-icon img {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;   /* makes them circles */
+  border: 2px solid #d3403b;
+  padding: 2px;
+  background-color: #111;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.Icons img {
+  width: 70px;
+  height: 70px;
+  transition: transform 0.3s ease;
+}
+
+.Icons:hover img {
+  transform: scale(1.2);
+}
+
+.tooltip {
+  position: absolute;
+  bottom: 20px; 
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.Icons:hover .tooltip {
+  opacity: 1;
+}
+
+.about-section {
+    padding: 50px 20px;
+    background-color: #080808;
+    color: #fff;
+    text-align: center;
+}
+
+.about-header {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #d3403b;
+    margin-top: 150px;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.about-box {
+    background: #111;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+    flex: 1; 
+}
+
+.about-title {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #fff;
+    border-bottom: 2px solid #d3403b;
+    padding-bottom: 5px;
+}
+
+.about-box p,
+.about-box li {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+.year {
+    color: #d3403b;
+    font-weight: bold;
+}
+
+.about-box ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+/* Responsive row layout for larger screens */
+@media (min-width: 900px) {
+    .about-container {
+        flex-direction: row; /* side by side */
+        align-items: stretch;
+    }
+}

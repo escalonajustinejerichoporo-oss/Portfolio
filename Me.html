@@ -1,0 +1,256 @@
+    <!Doctype html>
+
+    <html>
+        <head>
+            <title>Portfolio</title>
+            <link rel="stylesheet" href="Design.css">
+        </head>
+        <body>
+            <!--Navigation Start-->
+            <nav class="Navigation">
+                <div class="JustineLogo">
+                    Justine
+                </div>
+                <div class="CenterNav">
+                    <a class="HomeNav" href="#name">Home</a>
+                    <a class="ContactNav" href="#techno">Technologies</a>
+                    <a class="ProjectNav" href="#projects">Projects</a>
+                    <a class="AboutNav" href="#about">About</a>
+                </div>
+            </nav>
+            <!--Navigation End-->
+            
+            <!--My name Start-->
+            <div id="name" class="NameContainer">
+                <div class="Name">
+                    <h1 class="HelloText">Hello, I'm</br></h1>
+                    <h1 class="JustineText">Justine</h1>
+                    <h1 class="PeriodText">.</h1>
+                </div>
+                <div class="Purpose">
+                    <p class="PurposeText">I am a web developer who focuses on creating clean, responsive, and user-friendly websites. My work emphasizes functionality and attention to detail, ensuring that designs not only look good but also perform well across devices. I enjoy turning ideas into practical solutions and continuously improving through hands-on projects. With every build, I aim to deliver reliable results that provide value to users while maintaining simplicity and efficiency in both design and code.</p>
+                </div>
+                <div class="ButtonContainer">
+                    <input type="button" class="HireMe" value="My Links Below">
+                </div>
+                <div class="Logo">
+                    <a href="https://www.linkedin.com/in/justine-escalona-b470b9324" target="_blank">
+                        <img src="./Pictures/icons8-linkedin-logo-50.png" class="Linkdin">
+                    </a>
+
+                    <a href="https://profile.indeed.com/?hl=en_PH&co=PH&from=gnav-app-tracker" target="_blank">
+                        <img src="./Pictures/icons8-indeed-48.png" class="Indeed">
+                    </a>
+
+                    <a href="https://ph.jobstreet.com/profile/justinejericho-escalona-QJWwMxf80D" target="_blank" >
+                        <img src="./Pictures/icons8-arrow-50.png" target="_blank" class="JobStreet">
+                    </a>
+                </div>
+            </div>
+            <!--My name End-->
+
+            <!--Technologies-->
+            <div id="techno" class="TechnologiesContainer">
+                <div class="Technologies">
+                    <h1 class="TechnologiesUsed">Technologies</h1>
+                    <div class="techStack">
+                        <div class="Icons">
+                            <img src="./Pictures/icons8-html-50.png" alt="HTML">
+                            <span class="tooltip">HTML5</span>
+                        </div>
+                        <div class="Icons">
+                            <img src="./Pictures/icons8-css-50.png" alt="CSS">
+                            <span class="tooltip">CSS3</span>
+                        </div>
+                        <div class="Icons">
+                            <img src="./Pictures/icons8-javascript-50.png" alt="JavaScript">
+                            <span class="tooltip">JavaScript</span>
+                        </div>
+                        <div class="Icons">
+                            <img src="./Pictures/icons8-c-50.png" alt="C++">
+                            <span class="tooltip">C++</span>
+                        </div>
+                        <div class="Icons">
+                            <img src="./Pictures/icons8-python-50.png" alt="Python">
+                            <span class="tooltip">Python</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Technologies End-->
+
+
+            <!--Projects-->
+            <div id="projects" class="ProjectsContainer">
+                <div class="Projects">
+                    <h1 class="ProjectsText">Projects</h1>
+                    <div class="Project1">
+                        <h2 class="ProjectTitle">Amphibian Robot</h2>
+                        <img src="./Pictures/Amphibian Robot.png" class="AmphibianRobots">
+                        <p class="ProjectDescription">A robot that can manage to travel to land and water, a capstone project</p>
+                        <input type="button" class="ProjectButton" value="View Project" onclick="openBox()">
+                    </div>
+                    <div class="Project2">
+                        <h2 class="ProjectTitle">Random Number Guesser</h2>
+                        <img src="./Pictures/Screenshot 2025-08-20 211524.png" class="RandomNumberGuesser">
+                        <p class="ProjectDescription">A game that generates a random number between 1 and 100</p>
+                        <input type="button" class="ProjectButton" value="View Project" onclick="openBox2()">
+                    </div>
+                    <div class="Project3">
+                        <h2 class="ProjectTitle">Rythm Game</h2>
+                        <img src="./Pictures/Screenshot 2025-08-20 212031.png" class="RythmGame">
+                        <p class="ProjectDescription">A rhythm game that challenges players to match inputs in sync with music or beats</p>
+                        <input type="button" class="ProjectButton" value="View Project" onclick="openBox3()">
+                    </div>
+                    <div class="Project4">
+                        <h2 class="ProjectTitle">Calculator</h2>
+                        <img src="./Pictures/Screenshot 2025-08-20 212233.png" class="Calculator">
+                        <p class="ProjectDescription">A calculator application that performs basic arithmetic operations efficiently</p>
+                        <input type="button" class="ProjectButton" value="View Project" onclick = "openBox4()">
+                    </div>
+                </div>
+            </div>
+            <!--Projects End-->
+
+            <!--For Open Source-->
+            <div class="Overlay" id="overlay"></div>
+                <div class="ModalBox" id="modal">
+                <h2 class="ProjectTitles">Amphibian Robot</h2>
+                <p class="ProjectText">The capstone project focuses on the development of an amphibious robot capable of traversing both land and water environments. The system is programmed using C++ to control mobility, stability, and seamless transitions between terrains. This project demonstrates the effective integration of hardware and software components in creating a functional and versatile robotic platform.</p>
+                <h3 class="technologies">Technology used</h3>
+                <img src="./Pictures/icons8-c-50.png" class="Cplus"></br>
+                <button class="CloseBtn" onclick="closeBox()">Close</button>
+            </div>
+
+            <div class="Overlay2" id="overlay2"></div>
+                <div class="ModalBox2" id="modal2">
+                <h2 class="ProjectTitles">Random Number Guesser</h2>
+                <p class="ProjectText">This project is a simple game that generates a random number between 1 and 100 for the player to guess. I used HTML to structure the content and layout of the game. The design and styling were implemented using CSS, giving it a clean and user-friendly interface. JavaScript was applied to handle the logic, including number generation, input checking, and feedback to the player. The project highlights the combination of front-end technologies to create an interactive and engaging web-based game.</p>
+                <h3 class="technologies">Technologies used</h3>
+                <div class="techerStack">
+                    <div class="tech-icon">
+                        <img src="./Pictures/icons8-html-50.png" alt="HTML">
+                    </div>
+                    <div class="tech-icon">
+                        <img src="./Pictures/icons8-css-50.png" alt="CSS">
+                    </div>
+                    <div class="tech-icon">
+                        <img src="./Pictures/icons8-javascript-50.png" alt="JavaScript">
+                    </div>
+                </div>
+                <button class="CloseBtn2" onclick="closeBox2()">Close</button>
+            </div>
+
+            <div class="Overlay3" id="overlay3"></div>
+                <div class="ModalBox3" id="modal3">
+                <h2 class="ProjectTitles">Rythm Game</h2>
+                <p class="ProjectText">This project is a rhythm game designed to test timing and accuracy. I used HTML to structure the game’s interface and layout. CSS was applied to enhance its visual design and make the gameplay more engaging. JavaScript handled the core logic, including beat synchronization, scoring, and player interaction. The project showcases how web technologies can be combined to create an interactive and entertaining gaming experience.</p>
+                <h3 class="technologies">Technologies used</h3>
+                <div class="techerStack">
+                    <div class="tech-icon">
+                        <img src="./Pictures/icons8-html-50.png" alt="HTML">
+                    </div>
+                    <div class="tech-icon">
+                        <img src="./Pictures/icons8-css-50.png" alt="CSS">
+                    </div>
+                    <div class="tech-icon">
+                        <img src="./Pictures/icons8-javascript-50.png" alt="JavaScript">
+                    </div>
+                </div>
+                <button class="CloseBtn3" onclick="closeBox3()">Close</button>
+            </div>
+
+            <div class="Overlay4" id="overlay4"></div>
+                <div class="ModalBox4" id="modal4">
+                <h2 class="ProjectTitles">Calculator Project</h2>
+                <p class="ProjectText">This project is a calculator application that allows users to perform basic arithmetic operations such as addition, subtraction, multiplication, and division. I used HTML to create the structure and layout of the calculator’s interface. CSS was applied to style the buttons and display, making it clean and user-friendly. JavaScript was used to implement the logic behind the calculations and handle user inputs. The project demonstrates the practical use of web technologies to build a simple yet functional tool.</p>
+                <h3 class="technologies">Technologies used</h3>
+                <div class="techerStack">
+                    <div class="tech-icon">
+                        <img src="./Pictures/icons8-html-50.png" alt="HTML">
+                    </div>
+                    <div class="tech-icon">
+                        <img src="./Pictures/icons8-css-50.png" alt="CSS">
+                    </div>
+                    <div class="tech-icon">
+                        <img src="./Pictures/icons8-javascript-50.png" alt="JavaScript">
+                    </div>
+                </div>
+                <button class="CloseBtn4" onclick="closeBox4()">Close</button>
+            </div>
+
+            <!--For Open Source End-->
+
+
+            <!--About Me-->
+            <section class="about-section">
+                <h1 class="about-header" id="about">About Me</h1>
+
+                <div class="about-container">
+                    
+                    <!-- Work Experience -->
+                    <div class="about-box">
+                        <h2 class="about-title">Work Related Experience</h2>
+                        <p><strong>Automation Engineer – R. Dan and Co.</strong></p>
+                        <p class="year">Feb 2025 – Jun 2025</p>
+                        <ul>
+                            <li>Used PLC for conveyors</li>
+                            <li>Siemens programming</li>
+                            <li>Designed HMI with alarms</li>
+                            <li>Handled Alaska, Unilever, JTI projects</li>
+                            <li>Diagnosed conveyor system alarms</li>
+                        </ul>
+
+                        <p><strong>Automation & PLC Programmer – DAC Industrial Electronics Inc.</strong></p>
+                        <p class="year">Aug 2024 – Jan 2025</p>
+                        <ul>
+                            <li>Designed electrical control boxes (AutoCAD)</li>
+                            <li>Programmed Scara robot (LUA in DRA Studio)</li>
+                            <li>Developed PLC programs for automation</li>
+                        </ul>
+
+                        <p><strong>Intern – CJI General Services Inc.</strong></p>
+                        <p class="year">Feb 2024 - April 2024</p>
+                        <ul>
+                            <li>Daily equipment inspection</li>
+                            <li>Used CMMS for records</li>
+                            <li>Ensured workplace and PPE safety</li>
+                        </ul>
+                    </div>
+
+                    <!-- Education -->
+                    <div class="about-box">
+                        <h2 class="about-title">Education</h2>
+                        <p><strong>BS Mechatronics Engineering</strong></p>
+                        <p>Batangas State University – Gov. Pablo Borbon Campus II</p>
+                        <p class="year">2021 – 2024</p>
+
+                        <p><strong>Senior & Junior High</strong></p>
+                        <p>Bauan Colleges Inc.</p>
+                        <p class="year">2014 – 2020</p>
+
+                        <p><strong>Primary School</strong></p>
+                        <p>Sinala Elementary School</p>
+                        <p class="year">2008 – 2014</p>
+                    </div>
+
+                    <!-- Achievements -->
+                    <div class="about-box">
+                        <h2 class="about-title">Achievements</h2>
+                        <ul>
+                            <li>Career Service Exam – Professional Level Passer <span class="year">2024</span></li>
+                            <li>Dean’s List <span class="year">2021 – 2024</span></li>
+                            <li>With Honors <span class="year">2019 – 2020</span></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </section>
+            <!--About Me End-->
+
+            
+            <script src="Script.js"></script>
+        </body>
+
+    </html>
